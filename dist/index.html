@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function doExecute() {
+            console.log("executing...")
+            fetch("/do").then(res => res.text()).then(res => { 
+                console.log(res)
+                console.log("finished")
+             })
+        }
+    </script>
+    <button id='getData' onclick="doExecute()">Get Data</button>
+</body>
+</html>

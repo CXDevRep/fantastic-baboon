@@ -1,0 +1,10 @@
+---
+applications:
+- name: traceability-service
+  random-route: true
+  buildpacks:
+    - https://github.com/cloudfoundry/nodejs-buildpack
+  services:
+  - my-xsuaa
+  - executeDestination
+  memory: 1024M

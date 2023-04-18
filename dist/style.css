@@ -1,0 +1,19 @@
+* {
+    background-color: #353839;
+}
+
+button {    
+    background-color:#00b9f2;
+    height:100px;width:200px;
+    border-radius: 7px;
+    border:#00b9f2 1px;
+    position:absolute;
+    top:calc(50% - 50px);
+    left:calc(50% - 100px);
+    font-size: 30px;
+    color: white;
+    font-style: bold;
+}
+button:hover {
+    background-color: #019ce0;
+}

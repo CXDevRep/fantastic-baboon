@@ -1,0 +1,18 @@
+{
+    "welcomeFile": "index.html",
+    "authenticationMethod": "route",
+    "routes": [
+        {
+            "source": "/execute(.*)",
+            "target": "$1",
+            "destination": "executeDestination",
+            "authenticationType": "none"
+        },
+        {
+            "source": "^(.*)$",
+            "target": "$1",
+            "authenticationType": "none",
+            "localDir": "dist/"
+        }
+    ]
+}
